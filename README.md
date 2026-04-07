@@ -1,4 +1,4 @@
-# CarVal — AI-Powered Car Price Predictor
+# 🚗 CarVal — AI-Powered Car Price Predictor
 
 CarVal is a machine learning web application designed to estimate the resale value of used cars based on various features such as year of manufacture, present price, distance driven, fuel type, transmission, and ownership history. 
 
@@ -71,5 +71,4 @@ The core of this project is a regression-based machine learning pipeline:
 
 ---
 
-## 📂 Project Structure
 
