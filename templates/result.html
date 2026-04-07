@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarVal — Result</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <div class="bg-grid"></div>
+    <div class="bg-glow"></div>
+
+    <div class="page-wrapper">
+
+        <header class="header">
+            <div class="logo">
+                <span class="logo-icon">◈</span>
+                <span class="logo-text">CarVal</span>
+            </div>
+            <p class="tagline">AI-Powered Resale Estimator</p>
+        </header>
+
+        <main class="main result-main">
+
+            <div class="result-card">
+                <p class="result-eyebrow">Estimated Resale Value</p>
+                <div class="result-price">
+                    <span class="currency">₹</span>
+                    <span class="amount">{{ prediction }}</span>
+                    <span class="lakh">Lakhs</span>
+                </div>
+                <div class="result-bar">
+                    <div class="result-bar-fill"></div>
+                </div>
+                <p class="result-note">This estimate is based on your car's features using a machine learning model trained on Indian resale market data.</p>
+            </div>
+
+            <div class="result-actions">
+                <a href="/" class="back-btn">
+                    <span>←</span> Predict Another Car
+                </a>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <p>Powered by Random Forest · Trained on Indian car market data</p>
+        </footer>
+
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
