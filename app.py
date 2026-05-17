@@ -23,7 +23,7 @@ def predict():
     input_df['Driven_kms'] = int(request.form['driven_kms'])
     input_df['Owner'] = int(request.form['owner'])
 
-    # One-hot encode Fuel Type
+    # One-hot encode Fuel Typep
     fuel = request.form['fuel_type']
     if fuel == 'Diesel' and 'Fuel_Type_Diesel' in columns:
         input_df['Fuel_Type_Diesel'] = 1
